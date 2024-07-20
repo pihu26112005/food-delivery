@@ -1,0 +1,44 @@
+.place-order {
+    margin: 80px 0;;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.place-order h2 {
+    margin-bottom: 20px;
+}
+
+.place-order form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.place-order form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.place-order form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.place-order form button:hover {
+    background-color: #0056b3;
+}

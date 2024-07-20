@@ -1,0 +1,188 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+
+.logo{
+    width: 150px;
+}
+
+.navbar-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    color: #49557e;
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar button{
+    padding: 10px 20px;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    background-color: #49557e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navbar button:hover{
+    background-color: tomato;
+    border: 1px solid #49557e;
+}
+
+.navbar .active{
+    color: tomato;
+    border-bottom: 2px solid tomato;
+}
+
+li{
+    cursor: pointer;
+}
+
+.navbar-search-icon{
+    position: relative;
+}
+
+.navbar-search-icon .dot{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 50%;
+        
+}
+
+.navbar a:hover{
+    color: tomato;
+}
+
+
+.navbar-profile{
+    position: relative;
+}
+
+.navbar-profile-dropdown{
+    position: absolute;
+    right: -20px;
+    z-index: 1;
+    display: none;
+}
+
+.navbar-profile:hover .navbar-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid tomato;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.navbar-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: min(1vw,10px);
+    cursor: pointer;
+    font-size: max(10px,1vw);
+}
+
+.navbar-profile hr{
+    border: none;
+    background-color: black;
+    height: 1px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1050px){
+    
+    .logo{
+        width: 140px;
+    }
+    
+    .navbar-menu{
+        gap: 20px;
+        font-size: 16px;
+    }
+    
+    .navbar-right{
+        gap: 25px;
+    }
+    
+    .navbar button{
+        padding: 9px 18px;
+        font-size: 15px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+}
+
+@media screen and (max-width: 915px){
+    
+    .logo{
+        width: 120px;
+    }
+    
+    .navbar-menu{
+        gap: 20px;
+        font-size: 15px;
+    }
+    
+    .navbar-right{
+        gap: 23px;
+    }
+    
+    .navbar button{
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    
+    /* .logo{
+        width: 100px;
+    } */
+    
+    .navbar-menu{
+        display: none;
+        gap: 15px;
+        font-size: 15px;
+    }
+/*     
+    .navbar-right{
+        gap: 23px;
+    }
+    
+    .navbar button{
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+    .navbar-right img{
+        width: 18px;
+    }
+*/
+}

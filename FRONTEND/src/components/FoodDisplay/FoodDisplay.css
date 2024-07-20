@@ -1,0 +1,16 @@
+.food-display{
+    margin: 2rem 0;
+}
+
+.food-display h2{
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    margin: 1rem 0;
+    gap: 1rem;
+    row-gap: 3rem;
+}
